@@ -1,0 +1,20 @@
+.loading {
+  text-align: center;
+  margin: 5rem 0;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}/*# sourceMappingURL=loading.module.css.map */

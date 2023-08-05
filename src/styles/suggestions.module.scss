@@ -1,0 +1,15 @@
+.suggestions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  .relatedVideosTitle{
+    margin: 2rem 0;
+    font-weight: bold;
+  }
+  .container{
+    width: min(100vw, 65rem);
+  }
+}

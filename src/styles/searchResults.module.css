@@ -1,0 +1,51 @@
+.homeVideosChannelIcon {
+  border-radius: 50%;
+}
+
+.container {
+  margin: 4rem auto 0 auto !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 90rem;
+}
+.container .card {
+  margin: 0 0.2rem 1.3rem 0.2rem;
+  width: max(20%, 20rem);
+}
+.container .card .cardLink .thumbnailAndDuration {
+  position: relative;
+}
+.container .card .cardLink .thumbnailAndDuration .thumbnailImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+.container .card .cardLink .thumbnailAndDuration .durationOverlay {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.container .card .cardLink .thumbnailAndDuration .durationText {
+  color: white;
+}
+.container .card .cardLink .channelIconAndTitle {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.container .card .cardLink .channelIconAndTitle .channelIcon {
+  margin: 0 0.5rem 0 0.5rem;
+}
+.container .card .cardLink .channelIconAndTitle .titleAndChannelName .videoTitle {
+  font-weight: normal;
+}
+.container .card .cardLink .channelIconAndTitle .titleAndChannelName .smallText {
+  font-size: small;
+  margin-top: 0.15rem;
+  color: gray;
+}/*# sourceMappingURL=searchResults.module.css.map */

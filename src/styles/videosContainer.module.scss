@@ -1,0 +1,105 @@
+.homeVideosChannelIcon {
+  border-radius: 50%;
+}
+
+.container {
+  margin: 6.5rem auto 0 auto;
+
+  .card {
+    margin: 0 0 1.3rem 0;
+
+    .cardLink {
+      .thumbnailAndDuration {
+        position: relative; //for duration overlay on image
+
+        .thumbnailImage {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+
+        .durationOverlay {
+          position: absolute;
+          bottom: 0.5rem;
+          right: 0.5rem;
+          background-color: rgba(0, 0, 0, 0.7);
+          padding: 0.4rem 0.6rem;
+          border-radius: 5px;
+          font-size: 0.8rem;
+        }
+
+        .durationText {
+          color: white;
+        }
+      }
+      .channelIconAndTitle {
+        display: flex;
+        margin-top: 0.5rem;
+        .channelIcon {
+          margin: 0 0.5rem 0 0.5rem;
+        }
+        .titleAndChannelName {
+          .videoTitle {
+            font-weight: normal;
+          }
+          .channelName {
+          }
+          .viewsAndDate {
+          }
+          .smallText {
+            font-size: small;
+            margin-top: 0.15rem;
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    margin: 7rem auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 90rem;
+    .card {
+      margin: 0 0.2rem 1.3rem 0.2rem;
+      width: max(20%, 20rem);
+      .cardLink {
+        .thumbnailAndDuration {
+          .thumbnailImage {
+            border-radius: 7px;
+          }
+
+          .durationOverlay {
+            bottom: 0.3rem;
+            right: 0.3rem;
+            padding: 0.2rem 0.3rem;
+            border-radius: 5px;
+            font-size: 0.6rem;
+          }
+
+          .durationText {
+          }
+        }
+        .channelIconAndTitle {
+          .channelIcon {
+          }
+          .titleAndChannelName {
+            .videoTitle {
+              font-size: 16px;
+            }
+            .channelName {
+            }
+            .viewsAndDate {
+            }
+            .smallText {
+            }
+          }
+        }
+      }
+    }
+  }
+}

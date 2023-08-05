@@ -1,0 +1,10 @@
+.embededVideo {
+  margin: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.embededVideo iframe {
+  width: min(100vw, 65rem);
+  height: min(57vw, 37rem);
+}/*# sourceMappingURL=embededVideo.module.css.map */

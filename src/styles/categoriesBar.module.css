@@ -1,0 +1,73 @@
+.categoriesBarParent {
+  display: flex;
+  position: fixed;
+  top: 3.1rem;
+  padding: 0.5rem 0.2rem;
+  overflow-y: hidden;
+  height: 3rem;
+  width: 100%;
+  z-index: 99;
+  background-color: #ffffff;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.categoriesBarParent::-webkit-scrollbar {
+  display: none;
+}
+.categoriesBarParent .catList {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  margin: 0 0.2rem;
+  padding: 0 0.6rem;
+  background-color: #eaeaea;
+  border-radius: 7px;
+}
+.categoriesBarParent .active {
+  color: white;
+  background-color: #686868;
+}
+.categoriesBarParent button {
+  position: fixed;
+  top: 3.4rem;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+}
+.categoriesBarParent button .leftScrollBtnIcon {
+  position: relative;
+  right: 0.5rem;
+}
+.categoriesBarParent button .rightScrollBtnIcon {
+  position: relative;
+  left: 0.5rem;
+}
+.categoriesBarParent .scrollX {
+  display: none;
+}
+.categoriesBarParent .catBarLeftBtn {
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 10%, #ffffff 40%);
+  left: 0;
+  display: none;
+}
+.categoriesBarParent .catBarRightBtn {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 10%, #f9f9f9 40%);
+  right: 0;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .categoriesBarParent .catList {
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    padding: 0 0.7rem;
+  }
+  .categoriesBarParent .scrollX {
+    display: inherit;
+  }
+}/*# sourceMappingURL=categoriesBar.module.css.map */
